@@ -1,0 +1,164 @@
+@keyframes icon-spin{
+  0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}
+  100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}
+}
+
+
+.ez-list-table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+
+.icon-spin {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-animation: icon-spin 2s infinite linear;
+  animation: icon-spin 2s infinite linear;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.ez-list-search-form {
+  .form-inline {
+    .form-group {
+      margin-right: 15px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.ez-list-item-horizontal {
+
+  border-bottom: 1px solid #eee;
+
+  padding: 10px;
+  margin-top: 5px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+  .item-label {
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #777;
+    word-wrap: break-word;
+    word-break: normal;
+    overflow-x: hidden;
+  }
+  .item-content {
+    word-wrap: break-word;
+    word-break: normal;
+  }
+
+  .nowrap {
+    display: block;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.mulit-level-checkboxs {
+  margin: 0px;
+  background-color: #ccc;
+  & > dd {
+    display: none;
+  }
+  &.open {
+    & > dd {
+      display: block;
+    }
+  }
+  dt {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+
+    .checkbox {
+      margin: 0px;
+      padding: 0px;
+      label {
+        margin: 0px;
+        padding: 5px;
+        padding-left: 25px;
+        width: 100%;
+
+        display: block;
+
+        background-color: #EEE;
+
+        border: 1px solid #FFF;
+        border-left: 2px solid #FFF;
+
+        &:hover{
+          background-color: #3c8dbc;
+          color: #FFF;
+        }
+      }
+    }
+  }
+
+  dd {
+
+    -moz-transition: all 2s; /* Firefox 4 */
+    -webkit-transition: all 2s; /* Safari 和 Chrome */
+    -o-transition: all 2s; /* Opera */
+    transition: all 2s;
+
+    margin: 0px !important;
+    padding: 0px;
+    padding-left: 10px !important;
+
+    & > .checkbox-inline {
+      margin: 0px 10px 0px 0px;
+      padding: 3px 5px;
+      padding-left: 25px;
+      color: #666;
+      background-color: #EEE;
+
+      border: 1px solid #FFF;
+      border-left: 2px solid #FFF;
+
+      &:hover{
+        background-color: #3c8dbc;
+        color: #FFF;
+      }
+    }
+  }
+}
+
+.ez-list-datepicker-range {
+  &.inline {
+    display: inline-block;
+    width: 300px;
+    vertical-align: middle;
+  }
+  .range-wrap{
+    width:400px;
+    display: inline-block;
+  }
+  .range-item{
+    width:150px;
+    display:inline-block;
+    vertical-align: middle;
+  }
+  .range-item .form-control{
+    height:30px;
+  }
+
+  .input-daterange .w-range-btn{
+    border-right:1px solid #ccc;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    text-shadow: none;
+    position:relative;
+    z-index:2;
+    left:-1px;
+  }
+  .input-daterange .w-range-btn:hover{
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+    text-decoration: none;
+  }
+}

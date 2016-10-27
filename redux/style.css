@@ -1,0 +1,104 @@
+
+.custom-query {
+
+  @blue: #3c8dbc;
+
+  .nav-tabs {
+    li {
+      a {
+        border-radius: 2px 2px 0 0;
+      }
+      &.active {
+        a {
+          border-top: 2px solid @blue;
+        }
+      }
+    }
+  }
+  .pre-text {
+    display: block;
+    white-space: pre;
+  }
+  .text-blue {
+    color: @blue;
+  }
+  .modal {
+    .modal-content {
+      border-radius: 4px;
+      border: none;
+      border-top: 4px solid @blue;
+      background-color: @blue;
+
+
+      .modal-header {
+        background-color: transparent;
+        border: none;
+
+        color: #fff;
+        .text-muted {
+          color: #ddd;
+        }
+      }
+      .modal-body {
+        border-radius: 4px;
+        border: none;
+        background-color: #fff;
+        box-shadow: 0px -2px 6px rgba(55, 55, 55, 0.5);
+        overflow-x: hidden;
+      }
+      .modal-footer {
+        border: none;
+      }
+
+    }
+  }
+
+  .modal-header {
+    .tools {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  .detail-box {
+    .loading-warp {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .tools-warp {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .role-nav {
+    position: relative;
+
+    .top-left {
+      position: absolute;
+      left: 10px;
+      top: 15px;
+    }
+
+    .nav-tabs {
+      margin-top: 10px;
+    }
+  }
+  .user-base-info {
+    .ez-list-item-horizontal {
+      border-bottom: 1px solid #eee;
+
+      padding: 10px;
+      font-size: 0.9em;
+
+      .item-label {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+}
